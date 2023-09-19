@@ -1,0 +1,25 @@
+<div
+  class="fixed w-full h-full top-0 left-0 bg-black bg-opacity-50 z-10 flex flex-col"
+>
+  <div
+    class="bg-white m-auto p-6 border shadow-sm rounded dark:bg-black dark:text-white dark:border-gray-800"
+  >
+    <!-- <h1 class="text-xl">Modal</h1> -->
+    <h2 class="mb-4">
+      Estas seguro que quieres eliminar la tarea:
+      <strong> {{ task.title }} </strong>?
+    </h2>
+    <button
+      (click)="closeModal()"
+      class="text-gray-500 border-2 border-gray-500 p-2 rounded mr-6 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-900"
+    >
+      Cancelar
+    </button>
+    <button
+      (click)="deleteTask()"
+      class="bg-red-600 text-white p-2 rounded hover:bg-red-500"
+    >
+      Si, eliminar
+    </button>
+  </div>
+</div>
