@@ -66,9 +66,6 @@ export class AppComponent {
 
   ngOnInit() {
     this.loadTasks();
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      this.darkMode = true;
-    }
     if (localStorage.getItem('darkMode')) {
       this.darkMode = JSON.parse(localStorage.getItem('darkMode') || '');
     }
